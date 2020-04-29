@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+  background-color: #fafafa;
+}
+/*-------------------------------------- HEADER */
+/* Nav */
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 20px 0;
+}
+
+.nav__logo a img {
+  width: 130px;
+}
+
+.nav__search {
+  flex: 0 1 auto;
+  min-width: 125px;
+  width: 215px;
+  height: 28px;
+}
+
+.nav__search-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 5px;
+  background-color: #fafafa;
+}
+
+.nav__search .fa-search {
+  font-size: 15px;
+  color: #dbdbdb;
+}
+
+.nav__search input {
+  outline: 0;
+  padding: 3px 10px 3px 5px;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: #dbdbdb;
+  text-align: center;
+}
+
+::-moz-placeholder {
+  color: #dbdbdb;
+  text-align: center;
+}
+
+.nav .nav__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav__icons-perfil a img {
+  width: 28px;
+  border-radius: 50%;
+}
+
+/* Header Description */
+.header-desctiption {
+  display: grid;
+  grid-template-columns: 200px minmax(100px, 700px);
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 40px 0;
+}
+
+.header__description-perfil img {
+  border-radius: 50%;
+}
+
+.header__details-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header__details-name .details-space {
+  margin-right: 22px;
+}
+
+.header__details-name h2 {
+  margin: 0;
+  font-weight: 100;
+}
+
+.header__details-name .details-profile button {
+  background: none;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 7px 15px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__details-name .details-settings button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__details-links {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  padding: 0;
+}
+
+.header__details-links li {
+  margin-right: 70px;
+}
+
+.header__details-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.span-links-num {
+  font-weight: bold;
+}
+
+.h1-description {
+  display: inline;
+  font-weight: 600;
+  font-size: inherit;
+}
+
+/*-------------------------------- OUNTSTANDING */
+.outstanding {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px);
+  grid-template-rows: 200px;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.outstanding ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.outstanding ul li {
+  cursor: pointer;
+}
+
+.outstanding-li-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.outstanding-img-container {
+  text-align: center;
+  /* width: 80px; */
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  padding: 5px 5px 2px 5px;
+  /* padding-bottom: 1px; */
+  margin-bottom: 10px;
+}
+
+.outstanding-img-container img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+/*----------------------------------- POST LIST */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  gap: 28px;
+}
+
+.post {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.post-image {
+  margin: 0;
+}
+
+.post-image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.post-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.post:hover .post-overlay {
+  display: flex;
+}
+
+.fa-comments, .fa-heart {
+  margin-right: -15px;
+}
+
+.post-likes,
+.post-comments {
+  width: 80px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+/*-------------------------------------- FOOTER */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer ul li {
+  margin-right: 10px;
+  padding: 0 10px 0 0;
+  font-size: 13px;
+  color: #003799;
+  font-weight: bold;
+}
+
+.footer ul li a {
+  width: 100px;
+  text-decoration: none;
+}
+
+.footer__credits-span {
+  color: #8e8e8e;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .post-list {
+    gap: 3px;
+  }
+}
